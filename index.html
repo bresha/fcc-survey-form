@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Trashy Car Deals</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Trashy Car Deals</h1>
+        <p id="description">Fill the form bellow and we'll offer you best trashy car deals!</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <div id="data">
+                <label id="name-label" for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label id="email-label" for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <label id="number-label" for="number">Age:</label><br>
+                <input type="number" id="number" name="age" min="18" max="99" required placeholder="18-99"><br>
+            </div>
+            <div id="preferences">
+                <div #id="car-engine">
+                    <label>Car engine type:</label><br>
+                    <select name="car-engine" id="dropdown" required>
+                        <option value="" selected disabled>Select car engine type</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="electric">Electric</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+                <div id="transmission">
+                    <fieldset>
+                        <legend>Transmission type:</legend>
+                        <label><input name="transmission" type="radio" value="manual">Manual</label>
+                        <label><input name="transmission" type="radio" value="automatic">Automatic</label>
+                    </fieldset>
+
+                </div>
+                <div id="car-type">
+                    <fieldset>
+                        <legend>Car type:</legend>
+                        <label><input type="checkbox" name="car-type" value="coupe">Coupe</label>
+                        <label><input type="checkbox" name="car-type" value="sedan">Sedan</label>
+                        <label><input type="checkbox" name="car-type" value="hatchback">Hatchback</label>
+                        <label><input type="checkbox" name="car-type" value="cabriolet">Cabriolet</label>
+                        <label><input type="checkbox" name="car-type" value="suv">SUV</label>
+                        <label><input type="checkbox" name="car-type" value="minivan">Minivan</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div id="comment">
+                <p>Aditional comments:</p>
+                <textarea name="comments" id="comments" cols="30" rows="10"
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div id="button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

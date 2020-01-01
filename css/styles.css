@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i,900i&display=swap");
+
+body {
+  background-image: url("https://aecef948108b304bd4c7-f456f2efae27e8fc23c4d14e525cdf18.ssl.cf1.rackcdn.com/5YMKW8C52G0R43702/d64830777f3491c9b35013a6fe0fc7ad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+header {
+  max-width: 70%;
+  background-color: hsla(260, 2%, 37%, 0.6);
+  border-radius: 20px;
+  max-width: 70%;
+  margin: auto;
+}
+
+#title {
+  text-align: center;
+  font-weight: 900;
+  color: red;
+  font-size: 4em;
+  margin: 12px 12px 12px 12px;
+}
+
+#description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  margin-top: 16px;
+}
+
+#survey-form {
+  max-width: 70%;
+  margin: 16px auto;
+  background-color: hsla(260, 2%, 37%, 0.6);
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "data preferences"
+    "comment preferences"
+    "button button";
+  border-radius: 20px;
+}
+
+#survey-form p {
+  margin: 0px;
+}
+
+#data,
+#preferences,
+#comment {
+  margin: 20px;
+}
+
+#data {
+  grid-area: data;
+}
+
+#preferences {
+  grid-area: preferences;
+}
+
+#comment {
+  grid-area: comment;
+}
+
+#car-type,
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+textarea {
+  margin-left: 0;
+}
+
+#button {
+  grid-area: button;
+  justify-self: center;
+}
+
+#transmission {
+  margin-top: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  height: 20px;
+  font-family: inherit;
+}
+
+#dropdown {
+  width: 100%;
+  font-family: inherit;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 16px;
+  outline: none;
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 736px) {
+  #survey-form {
+    grid-template-areas:
+    "data"
+    "preferences"
+    "comment"
+    "button";
+  }
+}
