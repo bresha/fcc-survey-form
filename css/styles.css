@@ -1,49 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i,900i&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 body {
-  background-image: url("https://aecef948108b304bd4c7-f456f2efae27e8fc23c4d14e525cdf18.ssl.cf1.rackcdn.com/5YMKW8C52G0R43702/d64830777f3491c9b35013a6fe0fc7ad.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Playfair Display", serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
-}
-
-header {
-  max-width: 70%;
-  background-color: hsla(260, 2%, 37%, 0.6);
-  border-radius: 20px;
-  max-width: 70%;
-  margin: auto;
+  background-color: hsla(260, 2%, 37%, 0.9);
 }
 
 #title {
   text-align: center;
-  font-weight: 900;
-  color: red;
+  color: rgb(236, 66, 24);
   font-size: 4em;
-  margin: 12px 12px 12px 12px;
+  font-weight: 700;
+  margin: 16px;
 }
 
 #description {
   text-align: center;
-  font-weight: 400;
   font-size: 2em;
   color: white;
   margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+hr {
+  border: 3px solid rgb(236, 66, 24);
 }
 
 #survey-form {
-  max-width: 70%;
-  margin: 16px auto;
-  background-color: hsla(260, 2%, 37%, 0.6);
+  max-width: 80%;
+  margin: 30px auto;
   color: white;
   display: grid;
   grid-template-areas:
     "data preferences"
     "comment preferences"
     "button button";
-  border-radius: 20px;
 }
 
 #survey-form p {
@@ -109,12 +100,12 @@ textarea {
 #submit {
   width: 200px;
   height: 50px;
-  background-color: red;
-  color: white;
+  background-color: rgb(236, 66, 24);
   border-radius: 16px;
   outline: none;
   font-size: 1.5em;
-  margin-bottom: 16px;
+  margin-top: 30px;
+  font-family: inherit;
 }
 
 @media screen and (max-width: 736px) {
